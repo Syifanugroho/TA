@@ -1,0 +1,38 @@
+<!-- Complete Project Details at: https://RandomNerdTutorials.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP Firebase App</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA1a7i27piXVjDQsofH4QpC7jFNMM0q5ms",
+      authDomain: "gyro-46e36.firebaseapp.com",
+      databaseURL: "https://gyro-46e36-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "gyro-46e36",
+      storageBucket: "gyro-46e36.appspot.com",
+      messagingSenderId: "957222872005",
+      appId: "1:957222872005:web:eb36f49c9b10d2169be1ac"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var database = firebase.database();
+</script>
+<script src="app.js" defer></script>
+
+</head>
+<body>
+    <h1>ESP32 Firebase Web App Example</h1>
+    <p>Reading str: <span id="reading-activity"></span></p>
+</body>
+</html>
