@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "requirejs": "^2.3.6",
+    "trilateration": "^0.0.1"
+  }
+}

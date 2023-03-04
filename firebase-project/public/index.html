@@ -1,4 +1,3 @@
-<!-- Complete Project Details at: https://RandomNerdTutorials.com/ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,21 +12,24 @@
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
 
+    <!-- Library require.js buat bikin fungsi require di app.js -->
+    <script data-main = "app.js" src = "require.js"></script>
+    
     <script>
-    // Your web app's Firebase configuration
     const firebaseConfig = {
-      apiKey: "AIzaSyA1a7i27piXVjDQsofH4QpC7jFNMM0q5ms",
-      authDomain: "gyro-46e36.firebaseapp.com",
-      databaseURL: "https://gyro-46e36-default-rtdb.asia-southeast1.firebasedatabase.app",
-      projectId: "gyro-46e36",
-      storageBucket: "gyro-46e36.appspot.com",
-      messagingSenderId: "957222872005",
-      appId: "1:957222872005:web:eb36f49c9b10d2169be1ac"
+        apiKey: "AIzaSyA954go6MZ8QVATqASdTzRNvsm2sJmgF4o",
+        authDomain: "ta-data-f23b7.firebaseapp.com",
+        databaseURL: "https://ta-data-f23b7-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "ta-data-f23b7",
+        storageBucket: "ta-data-f23b7.appspot.com",
+        messagingSenderId: "75298387807",
+        appId: "1:75298387807:web:b1e01209f2fa5ec28228ea",
+        measurementId: "G-WXJMX58VBM"
     };
-    // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     var database = firebase.database();
 </script>
+
 <script src="app.js" defer></script>
 
 </head>
@@ -37,5 +39,7 @@
     <p>d1: <span id="reading-d1"></span></p>
     <p>d2: <span id="reading-d2"></span></p>
     <p>d3: <span id="reading-d3"></span></p>
+    <p>location: <span id="lokasi"></span></p>
+    <p>location2: <span id="lokasi-2"></span></p>
 </body>
 </html>
