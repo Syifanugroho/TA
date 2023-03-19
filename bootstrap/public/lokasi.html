@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style-2.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    
+    <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyA954go6MZ8QVATqASdTzRNvsm2sJmgF4o",
+        authDomain: "ta-data-f23b7.firebaseapp.com",
+        databaseURL: "https://ta-data-f23b7-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "ta-data-f23b7",
+        storageBucket: "ta-data-f23b7.appspot.com",
+        messagingSenderId: "75298387807",
+        appId: "1:75298387807:web:b1e01209f2fa5ec28228ea",
+        measurementId: "G-WXJMX58VBM"
+    };
+    firebase.initializeApp(firebaseConfig);
+    var database = firebase.database();
+
+    </script>
+
+    <script src="app.js" defer></script>
+
+    <title>Pelacakan Lokasi</title>
+  </head>
+  <body>
+    <a href="./choose.html">
+        <button type="button" class="btn btn-light btn-sm btn-primary-spacing" >Kembali</button>
+    </a>
+    <div class="box">
+        <h6><strong>Pelacakan Lokasi</strong></h6>
+    </div>
+
+
+    <div class="floor-plan">
+        <img src="../img/peta.jpeg" class="map" alt="logo-map">
+        <div class="tracker">
+          <i class="fas fa-people-carry" ></i>
+        </div>
+    </div>
+
+    <div class="box-2">
+      <p>Lokasi: <span id="reading-activity"></span></p>
+    </div>
+
+    
+    <h4><strong><i>"We care so you can care more"</i></strong></h4>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
