@@ -77,7 +77,7 @@ function getTrilateration(position1, position2, position3) {
     else if (floatReading == "Sleeping"){
       act_1.style.border = "6px solid #353535";
       act_2.style.border = "6px solid #353535";
-      act_3.style.border = "6px solid #00b2ca"; //3d5180
+      act_3.style.border = "6px solid #00b2ca";
     };
   }, 
   (errorObject) => {
@@ -120,10 +120,15 @@ function getTrilateration(position1, position2, position3) {
         var x_2 = Math.floor(Math.abs(lokasi.y /3.6 * 100))+"%";
         console.log(x_1);
         console.log(x_2);
-        tracker_1.style.border = "4px solid rgb(127, 211, 94)";
+        if (x_1 <15 &&  x_2<30){
+          document.getElementById("reading-location").innerHTML = "Bedroom";
+        }
+        else{
+          document.getElementById("reading-location").innerHTML = "Other room";
+        }
         tracker_1.style.position = "absolute";
-        tracker_1.style.bottom = x_1;
-        tracker_1.style.left = x_2;
+        tracker_1.style.bottom = x_1 ;
+        tracker_1.style.left = x_2 ;
       });
     });
   });

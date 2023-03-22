@@ -13,6 +13,7 @@ body{
 
 .box{
     width:260px;
+    margin-bottom : 60px;
 }
 
 h6{
@@ -46,7 +47,5 @@ p{
 }
 
 .map{
-    margin-top: 30px;
-    width:600px;
-    margin-left: 400px;
+    position :relative;
 }
