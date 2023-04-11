@@ -48,4 +48,9 @@ p{
 
 .map{
     position :relative;
+    height: 500px;
+}
+
+.tracker{
+    position : absolute;
 }
